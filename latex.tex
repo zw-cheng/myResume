@@ -1,0 +1,248 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{charter}
+
+% Linkedin symbol
+\usepackage{fontawesome}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% indent
+\usepackage{indentfirst}
+%\usepackage{textcomp}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.1in}
+\addtolength{\topmargin}{-45pt}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\Large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{ #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemtwo}[2]{
+  \item[]\small{
+    \textbf{#1}{ #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[5]{
+    \setlength{\itemindent}{-9pt}
+    \item[]
+    \begin{tabular*}{.99\textwidth}{p{0.99\textwidth}}
+      {\textbf{{#1}}}{{#2}} \hfill{\small{#3}} \\
+      {\small{#4}} \hfill{\small{#5}} \\
+    \end{tabular*}
+    \vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\vspace{-2pt}\resumeItem{#1}{#2}\vspace{-2pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-14pt}}
+
+\newcommand{\resumeItemListStart}{\vspace{0pt}\begin{itemize}[leftmargin=*]\setlength{\itemindent}{-9pt}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+%\begin{tabular}{ p{370pt}  l}
+ % \textbf{{\Large Ziwei Cheng}} & Email : %ziweic@andrew.cmu.edu \vspace{3pt}\\
+ % \textit{Actively seeking for software engineer %internship in summer 2020} & Mobile : (412)-897-4829 %%\textit{www.linkedin.com/in/ziwei-cheng} &
+  %Location : Pittsburgh, PA
+%\end{tabular}
+\begin{center}
+  
+  \textbf{{\LARGE Ziwei Cheng}}
+  
+  %\vspace{3pt}
+  
+  %Actively seeking internship opportunities in summer 2020.
+  \vspace{2pt}
+  
+  \faEnvelope\ \href{mailto://ziweic@cmu.edu}{ziweic@cmu.edu} \hspace{1pt}
+  \faPhone\ (412) 897-4829 \hspace{1pt} 
+%   \faLinkedinSquare\ \href{https://www.linkedin.com/in/ziwei-cheng}{ziwei-cheng} \hspace{1pt} 
+  \faGithub\ \href{https://www.github.com/zw-cheng}{zw-cheng} \hspace{1pt} 
+  \faHome\ Sunnyvale, CA
+  
+  
+  \vspace{-10pt}
+\end{center}
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+  \resumeSubheading{Carnegie Mellon University}{, Information Networking Institute}{Aug. 2019 - May 2021}{\textbf{}Master of Science in Information Technology - Information Security, GPA 3.5/4.0}{}
+      \resumeItemListStart
+      \resumeItem{}{Coursework: Distributed Systems, Parallel Computer Architecture \& Programming, Advanced Real-World Networks, Computer Systems, Information Security, Web Application Development}
+      \resumeItemListEnd
+    \resumeSubheading
+      {University of Science and Technology Beijing}{, School of Computer Engineering}{Aug. 2015 - June 2019}{\textbf{}Bachelor of Engineering in Information Security, GPA 3.7/4.0}{}
+      \resumeItemListStart
+      \resumeItem{}{Coursework: Computer Networks, Operating Systems, Computer Architecture, Database Systems, Data Structures}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+  
+
+%-----------EXPERIENCE-----------------
+\section{Employment}
+  \resumeSubHeadingListStart
+  
+    \resumeSubheading
+      {Apple}{}{May 2020 - Aug. 2020}
+      {\textbf{Software Engineer Intern}}{}
+      \resumeItemListStart
+        \resumeItem{}
+          {Developed \textbf{TCP} time sequence graph for fast network troubleshooting, integrated into an internal tool on macOS }
+          \resumeItem{}
+          {Parsed out data from TCP/IP headers and visualized it to show various network events in TCP connection }
+        \resumeItem{}
+          {Implemented basic elements of coordinate system from scratch using \textbf{Swift} and CoreGraphics}
+        % \resumeItem{}
+        %   {Optimized the rendering speed; }
+     \resumeItemListEnd
+     
+    \resumeSubheading
+      {Chinese Academy of Sciences}{}{July 2018 - Jan. 2019}
+      {\textbf{Software Engineer Intern}}{}
+      \resumeItemListStart
+        \resumeItem{}
+         {Developed a network scanning tool with \textbf{Go} language, supported more than \textbf{60} protocols}
+         \resumeItem{}
+          {Detected hundreds of insecure devices using the tool, and produced reports for security auditing purpose}
+        \resumeItem{}
+          {Boosted scanning speed to \textbf{2x faster} than Nmap by executing concurrent instances using goroutine}
+
+
+        % \resumeItem{}
+        %  {Discovered and exploited \textbf{five} protocol vulnerabilities, thus protected \textbf{hundreds of devices}. For example, reverse-}
+        % \resumeItemtwo{}
+        %  {engineered password reset process and sent constructed packets by \textbf{Python} to access camera video}
+     \resumeItemListEnd
+
+    \resumeSubheading
+      {Lenovo}{}{July 2017 - Sept. 2017}
+      {\textbf{Product Engineer Intern}}{}
+      \resumeItemListStart
+        \resumeItem{}
+        {Conducted market research for Lenovo SmartVest, a wireless smart ECG wear, to enable future investment}
+        \resumeItem{}
+        {Predicted long-term product price by regression modelling \textbf{30,000 user data} with \textbf{Python} to determine the price strategy}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+  
+  \resumeSubheading
+      {Transparent Remote File Operation System}{}{Jan. 2020 - Feb. 2020}
+      {}{} \vspace{-20pt}
+      \resumeItemListStart
+        \resumeItem{}
+        {Built an RPC (Remote Procedure Calls) system to access remote services in \textbf{C}, including a server and client stub library}
+        % through interposing RPC stubs in C library}
+        \resumeItem{}
+        {Designed and implemented serialization protocol, sending and reconstructing recursive data structures over TCP/IP}
+        \resumeItem{}
+        {Developed multi-client server for concurrent file operation requests, such as open, read, write, lseek, stat, etc.}
+      \resumeItemListEnd
+      
+      \resumeSubheading
+      {Transparent Remote File Operation System}{}{Jan. 2020 - Feb. 2020}
+      {}{} \vspace{-20pt}
+      \resumeItemListStart
+        \resumeItem{}
+        {Built an RPC (Remote Procedure Calls) system to access remote services in \textbf{C}, including a server and client stub library}
+        % through interposing RPC stubs in C library}
+        \resumeItem{}
+        {Designed and implemented serialization protocol, sending and reconstructing recursive data structures over TCP/IP}
+        \resumeItem{}
+        {Developed multi-client server for concurrent file operation requests, such as open, read, write, lseek, stat, etc.}
+      \resumeItemListEnd
+      
+      \resumeSubheading
+      {Caching Web Proxy Server}{}{Nov. 2019 - Dec. 2019}
+      {}{} \vspace{-20pt}
+      \resumeItemListStart
+        \resumeItem{}
+        {Built an HTTP1.0/1.1 web proxy in \textbf{C}; processed multiple requests in parallel with POSIX threads}
+        \resumeItem{}
+        {Implemented LRU cache to accelerate service requests, shared resources are protected by reader/writer semaphore lock}
+      \resumeItemListEnd
+      
+      \resumeSubheading
+      {Object Detection System Based on Coexistence Relationship Learning }{}{Feb. 2019 - June 2019}
+      {}{} \vspace{-20pt}
+      \resumeItemListStart
+          \resumeItem{}
+          {Proposed a model to improve performance for multi-class object detection by learning coexistence feature}
+          \resumeItem{}
+          {Built the proposed network using \textbf{Python} and \textbf{Tensorflow} with attention mechanism}
+          \resumeItem{}
+          {Outperformed Faster R-CNN framework by \textbf{1.1\%} on precision, evaluated on MS-COCO dataset}
+      \resumeItemListEnd
+     
+      
+  \resumeSubHeadingListEnd
+
+%--------PROGRAMMING SKILLS------------
+\section{Skills}
+ \resumeSubHeadingListStart
+   \resumeSubItem{Languages: }{\textbf{Go}, \textbf{C++}, C, Python, Swift, Java, Bash, MySQL, PHP}
+   \resumeSubItem{Tools: }{Linux, Git, Azure, Django, Wireshark, LaTeX}
+ \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
+
+      \resumeSubheading
+      {Dynamic Memory Allocator}{}{Oct. 2019}
+      {}{} \vspace{-20pt}
+      \resumeItemListStart
+        \resumeItem{}
+        {Implemented high-performance dynamic storage allocator for \textbf{C} programs, including malloc, free, realloc, and calloc}
+        \resumeItem{}
+        {Designed segregated free list with FIFO and first fit policy, minimized fragmentation and improved search efficiency }
+        \resumeItem{}
+        {Improved space utilization and throughput by eliminating footer, decreasing minimum block size, etc.}
+      \resumeItemListEnd
